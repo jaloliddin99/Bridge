@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/registration_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:id="@+id/registerScrollView"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ro'yhatdan O'ting"
+                android:layout_marginTop="15dp"
+                android:fontFamily="sans-serif-medium"
+                android:textAlignment="center"
+                android:id="@+id/introInfo"
+                android:textColor="@color/white"
+                android:textSize="22sp"/>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_marginTop="10dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+            <EditText
+                android:padding="14dp"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/name"
+                android:hint="Ism Familyangiz"
+                android:inputType="textPersonName|textAutoComplete"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                >
+                <EditText
+                    android:padding="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:fontFamily="sans-serif-medium"
+                    android:textSize="18sp"
+                    android:id="@+id/email"
+                    android:hint="Email Pochtangiz"
+                    android:inputType="textEmailAddress|textAutoComplete"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                >
+                <EditText
+                    android:padding="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:fontFamily="sans-serif-medium"
+                    android:textSize="18sp"
+                    android:id="@+id/passwordEmail"
+                    android:hint="Parol kiriting"
+                    android:inputType="textPassword"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:hint="Hududni Tanlang">
+
+                <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                    android:id="@+id/filled_exposed_dropdown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:inputType="none"
+                    android:textColor="@color/white" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                >
+            <EditText
+                android:layout_gravity="center"
+                android:id="@+id/numPicker"
+                android:layout_width="match_parent"
+                android:padding="14dp"
+                android:textSize="18sp"
+                android:hint="Yoshingiz"
+                android:inputType="numberDecimal"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-medium"
+                android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-medium"
+                android:text="Telefon raqamingiz"/>
+            <com.github.willena.phoneinputview.PhoneInputView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:id="@+id/phoneId"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-medium"
+                app:cornerRadius="6dp"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:text="Register"
+                android:id="@+id/register"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/black"
+                android:text="oldin ro'yhatdan o'tgansizmi?"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/login"
+                android:layout_gravity="end"
+                android:textColor="@color/teal_200"
+                android:text="@string/my_text"/>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+    <ScrollView
+        android:id="@+id/loginScrollView"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Eski Accountga kirish"
+                android:layout_marginTop="15dp"
+                android:fontFamily="sans-serif-medium"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="22sp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                >
+                <EditText
+                    android:padding="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:fontFamily="sans-serif-medium"
+                    android:textSize="18sp"
+                    android:id="@+id/loginEmail"
+                    android:hint="Email Pochtangiz"
+                    android:inputType="textEmailAddress|textAutoComplete"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                >
+                <EditText
+                    android:padding="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:fontFamily="sans-serif-medium"
+                    android:textSize="18sp"
+                    android:id="@+id/loginPassword"
+                    android:hint="Parol kiriting"
+                    android:inputType="textPassword"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="10dp"
+
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-medium"
+                app:cornerRadius="6dp"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:text="Login"
+                android:id="@+id/loginButton"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/black"
+                android:text="oldin ro'yhatdan o'tmagansizmi?"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/loginSwitcher"
+                android:layout_gravity="end"
+                android:textColor="@color/teal_200"
+                android:text="@string/my_text2"
+                android:textDirection="anyRtl"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,209 @@
+<resources>
+    <string name="app_name">Bridge</string>
+    <string name="intro_text">Yoshlar orasida ajdodlarimiz ilmiy va ma\’naviy merosini
+        axborot texnologiyalari vositalari yordamida innovatsion
+        usulda keng targ\’ib qilish</string>
+
+
+    <!--    <string-array name="regions">-->
+    <!--        <item>Jizzax    </item>-->
+    <!--        <item>Samarqand</item>-->
+    <!--        <item>Sirdaryo </item>-->
+    <!--        <item>Buxoro </item>-->
+    <!--        <item>Qashqadaryo </item>-->
+    <!--        <item>Surxondaryo </item>-->
+    <!--        <item>Navoiy  </item>-->
+    <!--        <item>Xoraxm  </item>-->
+    <!--        <item>Qoraqalpog'iston</item>-->
+    <!--        <item>Toshkent </item>-->
+    <!--        <item>Namangan </item>-->
+    <!--        <item>Farg'ona</item>-->
+
+    <!--    </string-array>-->
+    <string name="my_text"><u>eski akkountga kirish</u>.</string>
+    <string name="my_text2"><u>Ro\'yhatdan O\'tish</u>.</string>
+    <string name="intro_text2">Yoshlar ongida ajdodlarimiz ma\’naviy merosini shakllantirish.
+     Ularning ongida paydo bo\’layotgan ma\’naviy bo\’shliqni milliy,
+        ma\’naviy merosimiz bilan to\’ldirish</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="light_mode">Light Mode</string>
+    <string-array name="textList">
+        <item>Asosiy Qisim</item>
+        <item>Qiziqarli Malumotlar</item>
+        <item>Savollar &amp; testlar</item>
+        <item>Mukofotga ega bolish</item>
+    </string-array>
+    <string name="main_page">Asosiy Qisim</string>
+    <string name="inter_info">Qiziqarli Malumotlar</string>
+    <string name="question">Savollar &amp; testlar</string>
+    <string name="get_money">Mukofotga ega bolish</string>
+    <string-array name="textListAddition">
+        <item>dasturning asosiy qismi</item>
+        <item>Umumlashgan qiziqarli malumotlar</item>
+        <item>Asosiy qismga doir barcha test savollar</item>
+        <item>Sovringa ega bolish shartlari</item>
+    </string-array>
+    <string name="main_page_d">dasturning asosiy qismi</string>
+    <string name="inter_info_d">Umumlashgan qiziqarli malumotlar</string>
+    <string name="question_d">Asosiy qismga doir barcha test savollar</string>
+    <string name="get_money_d">Sovringa ega bolish shartlari</string>
+
+    <string-array name="descriptionPart1">
+        <item>V-IX asrlar</item>
+        <item>X-XIV asrlar</item>
+        <item>XV-XIX asrlar</item>
+    </string-array>
+    <string-array name="descriptionPart2">
+        <item>Aniq fanlar</item>
+        <item>Tabiiy fanlar</item>
+        <item>Ijtimoiy Gumanitar fanlar</item>
+        <item>Din va Jamiyat</item>
+        <item>Jadidchilik</item>
+        <item>Adabiyot va Sanat</item>
+    </string-array>
+
+
+    <string-array name="hero_list_1_1_uz">
+        <item>Buxoriy</item>
+        <item>Narshaxiy</item>
+        <item>Roziy</item>
+    </string-array>
+    <string-array name="hero_list_1_1_uz1">
+        <item>Imom al-Buxoriy (810.21.7, Buxoro — 870.31.8, Samarqand yaqinidagi Hartang qishlog‘i) — islom olamining yirik mutafakkiri</item>
+        <item>Abu Bakr Muhammad ibn Jaʼfar ibn Zakariyya al-Xattob ibn Sharik an-Narshaxiy (899—959) — tarixchi olim. </item>
+        <item>Roziy (toʻliq nomi Abu Bakr Muhammad ibn Zakariyo al-Roziy) (865.28.8 — Ray — 925.26.10) — sharqning qomusiy olimi, tabib va mutafakkir</item>
+    </string-array>
+
+    <string-array name="hero_list_1_2_uz">
+        <item>Yusuf Hos Hojib</item>
+        <item>Al-Koshiy</item>
+        <item>Ali-Qushchi</item>
+        <item>Al-Beruniy</item>
+        <item>Abu Ali Inb Sino</item>
+        <item>Rumiy</item>
+        <item>Zamaxshariy</item>
+        <item>Nasafiy</item>
+    </string-array>
+    <string-array name="hero_list_1_2_uz1">
+        <item>Turkiy shoir, mutafakkir, davlat arbobi. "Qutadg\'u bilig" dostoni muallifi. Qoraxoniylar saroyida xizmat qilgan. </item>
+        <item> (Al-Koshiy), Gʻiyosiddin Jamshid (taxminan 1430 yil la Samarqandda vafot ettan) — atoqli matematik va astronom</item>
+        <item>falakiyotshunos va riyoziyotchi olim, Ulug\'bek ilmiy maktabining atoqli namoyandalaridan biri, uning yaqin shogirdi</item>
+        <item> (4-sentabr, 973, Kat, Xorazm, — 13-dekabr, 1048, Gʻazna) — X - XI asrning birinchi yarmida yashagan Xorazmlik qomusiy olim. </item>
+        <item>oʻrta osiyolik buyuk qomusiy olim, boshqa manbalarda esa, buxorolik fors olim, tabib</item>
+        <item>(30-sentabr 1207, Balx, Afg\'oniston — 17-dekabr 1273, Ko\'niya, Turkiya) nomi bilan mashhur bo\'lgan zot dunyoning ulug\' donishmandlaridan biri</item>
+        <item> 1075-yilda Xorazmning Zamaxshar qishlog\'i (hozirgi Xorazm viloyati Qo\'shko\'pir tumanida) da dunyoga kelgan.</item>
+        <item>Nasafiy xayoti va ijodiga oid ma\'lumot juda kam. Shoir arab tilida ijod qilgan</item>
+    </string-array>
+
+    <string-array name="hero_list_1_3_uz">
+        <item>Abdulla Avloniy</item>
+        <item>Munavvarqori Abdurashidxonov</item>
+    </string-array>
+    <string-array name="hero_list_1_3_uz1">
+        <item>XIX asr oxiri XX asr boshidagi o\'zbek milliy madaniyatining mashhur vakillaridan biri ma\'rifatparvar shoir, dramaturg, jurnalist, olim, davlat va jamoat arbobidir.</item>
+        <item>O\'rta Osiyo jadidchilik harakatining yoʻlboshchisi, 20-asr o\'zbek millim mat-buoti va yangi usuldagi milliy maktab asoschisi</item>
+    </string-array>
+
+
+    <string-array name="hero_list_2_1_uz">
+        <item>Al-Koshiy</item>
+        <item>Al-Beruniy</item>
+        <item>Ali-Qushchi</item>
+    </string-array>
+    <string-array name="hero_list_2_1_uz1">
+        <item> (Al-Koshiy), G\'iyosiddin Jamshid (taxminan 1430 yil la Samarqandda vafot ettan) — atoqli matematik va astronom</item>
+        <item> (4-sentabr, 973, Kat, Xorazm, — 13-dekabr, 1048, G\'azna) — X - XI asrning birinchi yarmida yashagan Xorazmlik qomusiy olim. </item>
+        <item>falakiyotshunos va riyoziyotchi olim, Ulug\'bek ilmiy maktabining atoqli namoyandalaridan biri, uning yaqin shogirdi</item>
+    </string-array>
+
+    <string-array name="hero_list_2_2_uz">
+        <item>Abu Ali Ibn Sino</item>
+        <item>Narshaxiy</item>
+        <item>Roziy</item>
+    </string-array>
+    <string-array name="hero_list_2_2_uz1">
+        <item>o\'rta osiyolik buyuk qomusiy olim, boshqa manbalarda esa, buxorolik fors olim, tabib</item>
+        <item>Abu Bakr Muhammad ibn Ja\'far ibn Zakariyya al-Xattob ibn Sharik an-Narshaxiy (899—959) — tarixchi olim. </item>
+        <item>Roziy (to\'liq nomi Abu Bakr Muhammad ibn Zakariyo al-Roziy) (865.28.8 — Ray — 925.26.10) — sharqning qomusiy olimi, tabib va mutafakkir</item>
+    </string-array>
+
+
+    <string-array name="hero_list_2_3_uz">
+        <item>Nasafiy</item>
+    </string-array>
+    <string-array name="hero_list_2_3_uz1">
+        <item>Nasafiy xayoti va ijodiga oid ma\'lumot juda kam. Shoir arab tilida ijod qilgan</item>
+    </string-array>
+
+    <string-array name="hero_list_2_4_uz">
+        <item>Yusuf Hos Hojib</item>
+        <item>Buxoriy</item>
+    </string-array>
+    <string-array name="hero_list_2_4_uz1">
+        <item>Turkiy shoir, mutafakkir, davlat arbobi. "Qutadg\'u bilig" dostoni muallifi. Qoraxoniylar saroyida xizmat qilgan. </item>
+        <item>Imom al-Buxoriy (810.21.7, Buxoro — 870.31.8, Samarqand yaqinidagi Hartang qishlog\'i) — islom olamining yirik mutafakkiri</item>
+    </string-array>
+
+    <string-array name="hero_list_2_5_uz">
+        <item>Abdulla Avloniy</item>
+        <item>Munavvarqori Abdurashidxonov</item>
+    </string-array>
+    <string-array name="hero_list_2_5_uz1">
+        <item>XIX asr oxiri XX asr boshidagi oʻzbek milliy madaniyatining mashhur vakillaridan biri maʼrifatparvar shoir, dramaturg, jurnalist, olim, davlat va jamoat arbobidir.</item>
+        <item>Oʻrta Osiyo jadidchilik harakatining yoʻlboshchisi, 20-asr oʻzbek millim mat-buoti va yangi usuldagi milliy maktab asoschisi</item>
+    </string-array>
+
+    <string-array name="hero_list_2_6_uz">
+        <item>Rumiy</item>
+        <item>Zamaxshariy</item>
+    </string-array>
+    <string-array name="hero_list_2_6_uz1">
+        <item>(30-sentabr 1207, Balx, Afg‘oniston — 17-dekabr 1273, Ko`niya, Turkiya) nomi bilan mashhur boʻlgan zot dunyoning ulugʻ donishmandlaridan biri</item>
+        <item> 1075-yilda Xorazmning Zamaxshar qishlog\'i (hozirgi Xorazm viloyati Qo\'shko\'pir tumanida) da dunyoga kelgan.</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tog_ri_javobni_tanlang">tog\'ri javobni tanlang</string>
+    <string name="open_drawer">open drawer</string>
+    <string name="close_drawer">close drawer</string>
+    <string name="introUzb">Mukofotga ega bolishingiz uchun va siz bilan bog\'lanishimiz oshon bolishi uchun quyida keltirilganlarni to\'ldiring</string>
+    <string name="ismingizni_kiriting">ismingizni kiriting</string>
+    <string name="familyangizni_kiriting">Familyangizni Kiriting</string>
+    <string name="yoshingiz">Yoshingiz</string>
+
+    <string-array name="interestingInfo">
+        <item>Mashur alloma Muhammad ibn Ahmad Abu Rayhon Beruniy  o\’z ismiha “Rayhon ” so\’zini qo\’shganligini sababi  onasi Rayhon gulini sevganligi va Rayhon ismli qizni yaxshi ko\’rganligi sababdir. Shu bois Beruniy doimo Rayhon gulini chakkasiga taqib yurgan</item>
+        <item>Abu Hafs Najmiddin Umar ibn Muhammad “Nasafiy” taxaullisini tanlashiga sabab hozirgi yurtimizgadagi Qashqadaryo viloyati markazi Qarshi shahri avval “Nasaf” shahri bo\’lgan. Shu sabab tug\’ilib o\’sgan joyini taxallus qilib olgan.</item>
+        <item>Ali-Qushchining Qushchi laqabini olishga sabab Ulug\’bek saroyida “Qarchig\’ay” larni boqqanligidir.</item>
+        <item>Adib Ahmad Yugnakiy adib deya atalishiga sabab u o\’zini adab ilmining namoyondasi deb bilgan.</item>
+        <item>Zamaxshriyning yagona “Rabi\’ ul-abror va nusus ul-Ahor” asaridagina latifa janri uchraydi.</item>
+        <item>Allomlar ichida Zamaxshariygina “Jorulloh” (ollohning qoshnisi) nimoga erishgan.</item>
+        <item>Najmiddin laqabining ma\’nosi “dinning yulduzi” degan ma\’noni anglatadi</item>
+        <item>Hadis ilmida olim muayyan mavqeini egallagan insonlarga Hofiz nomi berilgan.</item>
+        <item>Hofiz Nasafiy buyuk mihaddis olim bo\’lgan.</item>
+        <item>Roziy Suqrotni axloq sohasida o\’zining va barcha faylasuflarning ustozi deb bilgan</item>
+        <item>Nasafiy Nasaf shahridan chiqishda Chokardiz qabristoniga dafn etilgan.</item>
+        <item>Zamaxshariy butun hayotini ilm olishga sarflagani va ilmiy asarlar yaratish, munosib shogirdlar tayyorlash-farzand o\’stirishdan a\’lo deb bilganligi uchun oila qurmagan
+        </item>
+        <item>Ibn Sinoning portreti tushirilgan pul birligi Tojikiston davlatiga tegishli.</item>
+        <item>Ibn Sino Alauddavlaning xamadonga yurish davrida Qulanch deb nomlanuvchi o\’g\’ir xastalikka chalinadi</item>
+        <item>.Barchamizga ma\’lum bo\’lgan “Tarixi Buxora” deb shuxrat topgan nodir asarning muallifi olim Narshaxiydir</item>
+
+
+    </string-array>
+    <string name="title_activity_main2">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Ko\'prik</string>
+    <string name="nav_header_subtitle">Bilimingizni sinab ko\'ring</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Ko\'prik</string>
+    <string name="menu_gallery">Biz bilan bo\'g\'lanish</string>
+    <string name="menu_slideshow">Sozlamalar</string>
+
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Password</string>
+    <string name="contact_us">Quyidagi keltirilgan manzillar orqali biz \n bog\'lanishingiz mumkin</string>
+</resources>
