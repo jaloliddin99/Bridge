@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:focusable="true"
+    style="?attr/cardViewStyle"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="12dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="10dp"
+    android:clickable="true"
+    android:id="@+id/cardView"
+    android:foreground="?android:attr/selectableItemBackground"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3">
+
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:foreground="@drawable/img_foregraund"
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:scaleType="centerCrop"
+                android:layout_height="match_parent"
+                android:src="@mipmap/ic_launcher" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:id="@+id/heroName"
+                android:text="Ko'prik"
+                android:textColor="@color/white"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:textAlignment="center"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="12dp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_weight="5">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="hero name"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+                <TextView
+                    android:layout_below="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_marginEnd="8dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/descriptionText"
+                    android:text="description text"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/readMore"
+                    android:text="ko'proq malumot"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"/>
+
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

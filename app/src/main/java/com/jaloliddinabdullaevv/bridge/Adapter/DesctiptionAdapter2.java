@@ -68,14 +68,11 @@ public class DesctiptionAdapter2 extends RecyclerView.Adapter<DesctiptionAdapter
             textView = itemView.findViewById(R.id.textView);
             cardView = itemView.findViewById(R.id.cardView);
             descriptionImg = itemView.findViewById(R.id.descriptionImg);
-            cardView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Common.descriptionObjects = objects.get(getAdapterPosition());
-                    Common.imageName=String.valueOf(descriptionImg.getTag());
-                    Intent intent = new Intent(context, HeroListActivity.class);
-                    context.startActivity(intent);
-                }
+            cardView.setOnClickListener(v -> {
+                Common.descriptionObjects = objects.get(getAdapterPosition());
+                Common.imageName=String.valueOf(descriptionImg.getTag());
+                Intent intent = new Intent(context, HeroListActivity.class);
+                context.startActivity(intent);
             });
         }
     }
