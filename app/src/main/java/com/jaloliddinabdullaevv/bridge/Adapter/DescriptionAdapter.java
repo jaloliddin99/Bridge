@@ -15,6 +15,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.google.android.material.card.MaterialCardView;
 import com.jaloliddinabdullaevv.bridge.Common.Common;
 
+import com.jaloliddinabdullaevv.bridge.HeroListActivity;
 import com.jaloliddinabdullaevv.bridge.Model.DescriptionObjects;
 import com.jaloliddinabdullaevv.bridge.R;
 
@@ -67,7 +68,10 @@ public class DescriptionAdapter extends RecyclerView.Adapter<DescriptionAdapter.
             cardView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-
+                    Common.descriptionObjects=objects.get(getAdapterPosition());
+                    Common.imageName=String.valueOf(descriptionImg.getTag());
+                    Intent intent=new Intent(context, HeroListActivity.class);
+                    context.startActivity(intent);
                 }
             });
         }
