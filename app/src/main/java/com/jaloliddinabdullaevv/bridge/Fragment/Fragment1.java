@@ -27,34 +27,7 @@ public class Fragment1 extends Fragment {
 
         logo=view.findViewById(R.id.logo);
         title=view.findViewById(R.id.title);
-//        logo.setTranslationY(-500f);
-//        logo.animate().translationYBy(500f)
-//                .setDuration(2000).setListener(new Animator.AnimatorListener() {
-//            @Override
-//            public void onAnimationStart(Animator animation) {
-//                textView.setCharacterDelay(100);
-//                textView.animateText("");
-//
-//            }
-//
-//            @Override
-//            public void onAnimationEnd(Animator animation) {
-//
-//                textView.animateText(getString(R.string.intro_text));
-//                title.animate().alpha(1.0f).setDuration(1000);
-//
-//            }
-//
-//            @Override
-//            public void onAnimationCancel(Animator animation) {
-//
-//            }
-//
-//            @Override
-//            public void onAnimationRepeat(Animator animation) {
-//
-//            }
-//        });
+
 
         return view;
     }

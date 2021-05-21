@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "50007368469",
+    "firebase_url": "https://bridgehackathon-71bb2-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "bridgehackathon-71bb2",
+    "storage_bucket": "bridgehackathon-71bb2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:50007368469:android:5c2ade256bfe905cf2ff1c",
+        "android_client_info": {
+          "package_name": "com.jaloliddinabdullaevv.bridge"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "50007368469-of6tr92v5pqj86qtaqbondngcg9fcnr6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChzUx6Zi9dYLF1q6VSGZieS_K8Y-R9jJA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "50007368469-of6tr92v5pqj86qtaqbondngcg9fcnr6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

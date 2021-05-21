@@ -44,7 +44,7 @@ public class StartActivity extends AppCompatActivity {
             SimpleFragmentPagerAdapter adapter = new SimpleFragmentPagerAdapter(getSupportFragmentManager());
 
             viewPager.setAdapter(adapter);
-
+//
 //            CircleIndicator indicator = (CircleIndicator) findViewById(R.id.indicator);
 //            indicator.setViewPager(viewPager);
         }

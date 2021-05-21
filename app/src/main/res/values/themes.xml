@@ -22,4 +22,19 @@
     <style name="Theme.Bridge.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.Bridge.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="ToolBarStyle" parent="ToolBarStyle.Base" />
+
+    <style name="ToolBarStyle.Base" parent="">
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+    </style>
+
+    <style name="ToolBarStyle.Event" parent="ToolBarStyle">
+        <item name="titleTextAppearance">@style/TextAppearance.AppCompat.Widget.ActionBar.Title</item>
+    </style>
+    <style name="toolbarStyle" parent="Widget.AppCompat.Toolbar">
+<!--        <item name="android:fontFamily">@font/autour_one</item>-->
+        <item name="android:textSize">20sp</item>
+        <item name="titleTextColor">@color/magenta</item>
+    </style>
 </resources>
