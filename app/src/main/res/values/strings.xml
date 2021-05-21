@@ -3,23 +3,6 @@
     <string name="intro_text">Yoshlar orasida ajdodlarimiz ilmiy va ma\’naviy merosini
         axborot texnologiyalari vositalari yordamida innovatsion
         usulda keng targ\’ib qilish</string>
-
-
-    <!--    <string-array name="regions">-->
-    <!--        <item>Jizzax    </item>-->
-    <!--        <item>Samarqand</item>-->
-    <!--        <item>Sirdaryo </item>-->
-    <!--        <item>Buxoro </item>-->
-    <!--        <item>Qashqadaryo </item>-->
-    <!--        <item>Surxondaryo </item>-->
-    <!--        <item>Navoiy  </item>-->
-    <!--        <item>Xoraxm  </item>-->
-    <!--        <item>Qoraqalpog'iston</item>-->
-    <!--        <item>Toshkent </item>-->
-    <!--        <item>Namangan </item>-->
-    <!--        <item>Farg'ona</item>-->
-
-    <!--    </string-array>-->
     <string name="my_text"><u>eski akkountga kirish</u>.</string>
     <string name="my_text2"><u>Ro\'yhatdan O\'tish</u>.</string>
     <string name="intro_text2">Yoshlar ongida ajdodlarimiz ma\’naviy merosini shakllantirish.
