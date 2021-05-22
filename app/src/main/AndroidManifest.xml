@@ -14,7 +14,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Bridge"
         tools:replace="android:icon">
-        <activity android:name=".TestActivity"></activity>
+        <activity android:name=".QuizActivity"></activity>
+        <activity android:name=".TestActivity" />
         <activity
             android:name=".HeroListActivity"
             android:theme="@style/Theme.Bridge.NoActionBar" />

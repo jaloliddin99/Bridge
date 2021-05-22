@@ -31,7 +31,8 @@ public class TestActivity extends AppCompatActivity {
         firstStep.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent=new Intent(v.getContext(), QuizActivity.class);
+                v.getContext().startActivity(intent);
             }
         });
         secondStep.setOnClickListener(new View.OnClickListener() {
