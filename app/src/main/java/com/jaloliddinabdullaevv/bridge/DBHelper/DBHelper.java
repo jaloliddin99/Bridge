@@ -6,11 +6,10 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
 import com.jaloliddinabdullaevv.bridge.Common.Common;
-import com.jaloliddinabdullaevv.bridge.Model.SavolNomer;
+import com.jaloliddinabdullaevv.bridge.Model.QuestionNumber;
 import com.readystatesoftware.sqliteasset.SQLiteAssetHelper;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class DBHelper extends SQLiteAssetHelper {
     private static final String DB_NAME = "hackathonSampleTest.db";
@@ -30,25 +29,25 @@ public class DBHelper extends SQLiteAssetHelper {
     }
 
 
-    public ArrayList<SavolNomer> getQuestion() {
+    public ArrayList<QuestionNumber> getQuestion() {
         SQLiteDatabase db = instance.getWritableDatabase();
         Cursor cursor = db.rawQuery(String.format("SELECT * FROM MultipleChoice WHERE qText is NOT NULL ORDER BY RANDOM() LIMIT 25;"), null);
-        ArrayList<SavolNomer> savolNomers = new ArrayList<>();
+        ArrayList<QuestionNumber> questionNumbers = new ArrayList<>();
         if (cursor.moveToFirst()) {
             while (!cursor.isAfterLast()) {
-                SavolNomer savolNomer = new SavolNomer(cursor.getInt(cursor.getColumnIndex("id")),
+                QuestionNumber questionNumber = new QuestionNumber(cursor.getInt(cursor.getColumnIndex("id")),
                         cursor.getString(cursor.getColumnIndex("qText")),
                         cursor.getString(cursor.getColumnIndex("optionA")),
                         cursor.getString(cursor.getColumnIndex("optionB")),
                         cursor.getString(cursor.getColumnIndex("optionC")),
                         cursor.getString(cursor.getColumnIndex("key")));
-                Common.togriJavoblarDatabasedan.add(cursor.getString(cursor.getColumnIndex("key")));
-                savolNomers.add(savolNomer);
+                Common.correctAnswersFromDb.add(cursor.getString(cursor.getColumnIndex("key")));
+                questionNumbers.add(questionNumber);
                 cursor.moveToNext();
             }
         }
         cursor.close();
         db.close();
-        return savolNomers;
+        return questionNumbers;
     }
 }

@@ -14,7 +14,7 @@ import android.widget.TextView;
 
 import com.jaloliddinabdullaevv.bridge.Adapter.AnswerSheetAdapter;
 import com.jaloliddinabdullaevv.bridge.Common.Common;
-import com.jaloliddinabdullaevv.bridge.Model.SavolNomer;
+import com.jaloliddinabdullaevv.bridge.Model.QuestionNumber;
 import com.jaloliddinabdullaevv.bridge.R;
 
 /**
@@ -26,7 +26,7 @@ public class BlankFragment extends Fragment {
 
     TextView text_question_text;
     RadioButton ckbA, ckbB, ckbC, ckbD;
-    SavolNomer savolNomer;
+    QuestionNumber questionNumber;
     int questionIndex=-1;
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -76,40 +76,40 @@ public class BlankFragment extends Fragment {
 
 
         questionIndex=getArguments().getInt("index", -1);
-        savolNomer= Common.savolNomers.get(questionIndex);
+        questionNumber = Common.questionNumbers.get(questionIndex);
 
         text_question_text = itemView.findViewById(R.id.savol);
-        text_question_text.setText(savolNomer.getSavol());
-        Log.i("text_question_text  ", " "+savolNomer.getSavol());
+        text_question_text.setText(questionNumber.getSavol());
+        Log.i("text_question_text  ", " "+ questionNumber.getSavol());
         ckbA = itemView.findViewById(R.id.variantA);
-        ckbA.setText(savolNomer.getJavobA());
+        ckbA.setText(questionNumber.getJavobA());
         ckbA.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Common.tenlanganJavoblar.set(Common.hozirgiSavol, "A");
-                AnswerSheetAdapter.colors.set(Common.hozirgiSavol, Color.parseColor("#2fff00"));
+                Common.chosenAnswers.set(Common.currentQuestion, "A");
+                AnswerSheetAdapter.colors.set(Common.currentQuestion, Color.parseColor("#2fff00"));
 
 
             }
         });
 
         ckbB = itemView.findViewById(R.id.variantB);
-        ckbB.setText(savolNomer.getJavobB());
+        ckbB.setText(questionNumber.getJavobB());
         ckbB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Common.tenlanganJavoblar.set(Common.hozirgiSavol, "B");
-                AnswerSheetAdapter.colors.set(Common.hozirgiSavol, Color.parseColor("#2fff00"));
+                Common.chosenAnswers.set(Common.currentQuestion, "B");
+                AnswerSheetAdapter.colors.set(Common.currentQuestion, Color.parseColor("#2fff00"));
             }
         });
 
         ckbC = itemView.findViewById(R.id.variantC);
-        ckbC.setText(savolNomer.getJavobC());
+        ckbC.setText(questionNumber.getJavobC());
         ckbC.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Common.tenlanganJavoblar.set(Common.hozirgiSavol, "C");
-                AnswerSheetAdapter.colors.set(Common.hozirgiSavol, Color.parseColor("#2fff00"));
+                Common.chosenAnswers.set(Common.currentQuestion, "C");
+                AnswerSheetAdapter.colors.set(Common.currentQuestion, Color.parseColor("#2fff00"));
             }
         });
 

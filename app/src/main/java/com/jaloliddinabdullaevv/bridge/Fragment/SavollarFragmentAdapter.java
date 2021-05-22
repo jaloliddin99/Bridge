@@ -9,7 +9,6 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
 import com.jaloliddinabdullaevv.bridge.Common.Common;
-import com.jaloliddinabdullaevv.bridge.Fragment.BlankFragment;
 
 import java.util.List;
 
@@ -38,7 +37,7 @@ public class SavollarFragmentAdapter extends FragmentPagerAdapter {
     public CharSequence getPageTitle(int position) {
         Log.i("eng Oxirgi List ", String.valueOf(position));
 
-        Common.engOxirgiList=position;
+        Common.lastQuestion =position;
         return new StringBuilder("Savol ").append(position+1).toString();
     }
 }

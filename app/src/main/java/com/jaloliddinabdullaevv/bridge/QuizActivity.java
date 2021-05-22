@@ -25,7 +25,7 @@ import com.jaloliddinabdullaevv.bridge.DBHelper.DBHelper;
 import com.jaloliddinabdullaevv.bridge.Fragment.BlankFragment;
 import com.jaloliddinabdullaevv.bridge.Fragment.SavollarFragmentAdapter;
 import com.jaloliddinabdullaevv.bridge.Model.CurrentQuestion;
-import com.jaloliddinabdullaevv.bridge.Model.SavolNomer;
+import com.jaloliddinabdullaevv.bridge.Model.QuestionNumber;
 
 import java.util.concurrent.TimeUnit;
 
@@ -34,7 +34,7 @@ public class QuizActivity extends AppCompatActivity {
     RecyclerView answer_sheet_view;
     AnswerSheetAdapter answerSheetAdapter;
     TabLayout tabLayout;
-    SavolNomer savolNomer;
+    QuestionNumber questionNumber;
     int time_lay= Common.TOTAL_TIME_QUIZ;
     TextView txt_question_right, txt_timer;
     Button resultButton;
@@ -54,15 +54,15 @@ public class QuizActivity extends AppCompatActivity {
         tabLayout = findViewById(R.id.sliding_tabs);
         resultButton = findViewById(R.id.resultButton);
 
-        Common.savolNomers.clear();
-        Common.savolNomers = DBHelper.getInstance(this).getQuestion();
+        Common.questionNumbers.clear();
+        Common.questionNumbers = DBHelper.getInstance(this).getQuestion();
 
         Common.currentQuestions.clear();
-        for (int i = 0; i<Common.savolNomers.size(); i++){
+        for (int i = 0; i<Common.questionNumbers.size(); i++){
             Common.currentQuestions.add(new CurrentQuestion(i));
         }
 
-        txt_question_right.setText((1) + "/" + (Common.savolNomers.size()));
+        txt_question_right.setText((1) + "/" + (Common.questionNumbers.size()));
         timer();
         setupQuestions();
         setupCards();
@@ -72,9 +72,9 @@ public class QuizActivity extends AppCompatActivity {
     public void onBackPressed() {
         super.onBackPressed();
         Common.countDownTimer.cancel();
-        Common.hozirgiSavol=0;
-        Common.savolNomers.clear();
-        Common.savolNomers.size();
+        Common.currentQuestion =0;
+        Common.questionNumbers.clear();
+        Common.questionNumbers.size();
     }
 
     private void setupQuestions(){
@@ -86,11 +86,11 @@ public class QuizActivity extends AppCompatActivity {
             @SuppressLint("SetTextI18n")
             @Override
             public void onPageSelected(int position) {
-                Common.hozirgiSavol = position;
+                Common.currentQuestion = position;
                 setupCards();
-                txt_question_right.setText((position + 1) + "/" + (Common.savolNomers.size()));
-                if (Common.hozirgiSavol == Common.engOxirgiList) {
-                    natijaButton();
+                txt_question_right.setText((position + 1) + "/" + (Common.questionNumbers.size()));
+                if (Common.currentQuestion == Common.lastQuestion) {
+                    resultButton();
                 } else {
                     resultButton.setVisibility(View.INVISIBLE);
                 }
@@ -99,8 +99,8 @@ public class QuizActivity extends AppCompatActivity {
             public void onPageScrollStateChanged(int state) {
             }
         });
-        for (int i=0; i<Common.savolNomers.size(); i++){
-            Common.tenlanganJavoblar.add("E");
+        for (int i = 0; i<Common.questionNumbers.size(); i++){
+            Common.chosenAnswers.add("E");
             AnswerSheetAdapter.colors.add(i, Color.parseColor("#34ebb4"));
         }
         Common.blankFragments.clear();
@@ -112,7 +112,7 @@ public class QuizActivity extends AppCompatActivity {
         viewPager.setPageTransformer(false, new CubeOutTransformer());
     }
     private void genFragmentList() {
-        for (int i = 0; i<Common.savolNomers.size(); i++){
+        for (int i = 0; i<Common.questionNumbers.size(); i++){
             Bundle bundle=new Bundle();
             bundle.putInt("index", i);
             BlankFragment fragment=new BlankFragment();
@@ -123,7 +123,7 @@ public class QuizActivity extends AppCompatActivity {
     private void setupCards() {
         answer_sheet_view = findViewById(R.id.grid_answer);
         answer_sheet_view.setHasFixedSize(true);
-        answer_sheet_view.setLayoutManager(new GridLayoutManager(this, Common.savolNomers.size()/2));
+        answer_sheet_view.setLayoutManager(new GridLayoutManager(this, Common.questionNumbers.size()/2));
         answerSheetAdapter = new AnswerSheetAdapter(this, Common.currentQuestions);
         answer_sheet_view.setAdapter(answerSheetAdapter);
     }
@@ -147,21 +147,21 @@ public class QuizActivity extends AppCompatActivity {
         }.start();
     }
     public void finishGame(){
-//        Intent intent=new Intent(QuizActivity.this, ResultActivity.class);
-//        Bundle bundle = new Bundle();
-//        bundle.putParcelableArrayList("mylist", Common.savolNomers);
-//        intent.putExtras(bundle);
-//        Common.timer=Common.TOTAL_TIME_QUIZ-time_lay;
-//        Common.countDownTimer.cancel();
-//        startActivity(intent);
+        Intent intent=new Intent(QuizActivity.this, ResultActivity.class);
+        Bundle bundle = new Bundle();
+        bundle.putParcelableArrayList("mylist", Common.questionNumbers);
+        intent.putExtras(bundle);
+        Common.timer=Common.TOTAL_TIME_QUIZ-time_lay;
+        Common.countDownTimer.cancel();
+        startActivity(intent);
     }
 
-    private void natijaButton(){
+    private void resultButton(){
         resultButton.setVisibility(View.VISIBLE);
         resultButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (Common.tenlanganJavoblar.contains("E")){
+                if (Common.chosenAnswers.contains("E")){
                     new MaterialAlertDialogBuilder(QuizActivity.this,
                             R.style.MyThemeOverlay_MaterialComponents_MaterialAlertDialog)
                             .setTitle("Diqqat!!!")

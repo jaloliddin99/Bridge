@@ -3,15 +3,15 @@ package com.jaloliddinabdullaevv.bridge.Model;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-public class SavolNomer implements Parcelable {
+public class QuestionNumber implements Parcelable {
     private int id;
     private String savol, javobA, javobB, javobC, aniqJavob;
 
 
-    public SavolNomer() {
+    public QuestionNumber() {
     }
 
-    public SavolNomer(int id, String savol, String javobA, String javobB, String javobC, String aniqJavob) {
+    public QuestionNumber(int id, String savol, String javobA, String javobB, String javobC, String aniqJavob) {
         this.id = id;
         this.savol = savol;
         this.javobA = javobA;
@@ -85,7 +85,7 @@ public class SavolNomer implements Parcelable {
     }
 
 
-    public SavolNomer(Parcel in) {
+    public QuestionNumber(Parcel in) {
         id = in.readInt();
         savol = in.readString();
         javobA=in.readString();
@@ -94,13 +94,13 @@ public class SavolNomer implements Parcelable {
         aniqJavob=in.readString();
     }
 
-    public static final Creator<SavolNomer> CREATOR = new Creator<SavolNomer>() {
-        public SavolNomer createFromParcel(Parcel in) {
-            return new SavolNomer(in);
+    public static final Creator<QuestionNumber> CREATOR = new Creator<QuestionNumber>() {
+        public QuestionNumber createFromParcel(Parcel in) {
+            return new QuestionNumber(in);
         }
 
-        public SavolNomer[] newArray(int size) {
-            return new SavolNomer[size];
+        public QuestionNumber[] newArray(int size) {
+            return new QuestionNumber[size];
         }
     };
 }
