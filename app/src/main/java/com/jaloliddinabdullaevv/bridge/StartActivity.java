@@ -4,10 +4,12 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 import androidx.viewpager.widget.ViewPager;
 
 import com.google.firebase.FirebaseApp;
@@ -22,7 +24,6 @@ public class StartActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //setTheme(R.style.Theme_Koprik);
         setContentView(R.layout.activity_start);
 
         FirebaseApp.initializeApp(this);
@@ -37,7 +38,9 @@ public class StartActivity extends AppCompatActivity {
         }else {
             Window window = getWindow();
             window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-            window.setStatusBarColor(Color.parseColor("#FFFF9800"));
+            window.setStatusBarColor(Color.parseColor("#FFFFFF"));
+            getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);//  set status text dark
+//            getWindow().setStatusBarColor(ContextCompat.getColor(StartActivity.this,R.color.black));
             getSupportActionBar().hide();
             ViewPager viewPager = findViewById(R.id.viewpager);
 

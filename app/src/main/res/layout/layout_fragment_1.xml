@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:background="@drawable/registration_background">
+    android:background="@color/white">
 
 
     <LinearLayout
@@ -28,7 +28,7 @@
             android:padding="10dp"
             android:text="Tarix - Bu Kelajak"
             android:textAlignment="center"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textSize="30sp" />
 
         <!--    <com.jaloliddinabdullaev.koprik.Utils.Typewriter-->
@@ -49,7 +49,7 @@
             android:fontFamily="sans-serif-medium"
             android:text="@string/intro_text2"
             android:textAlignment="center"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textSize="24sp"/>
     </LinearLayout>
 
