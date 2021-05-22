@@ -17,6 +17,7 @@ import androidx.lifecycle.ViewModelProvider;
 import com.google.android.material.card.MaterialCardView;
 import com.jaloliddinabdullaevv.bridge.Description;
 import com.jaloliddinabdullaevv.bridge.R;
+import com.jaloliddinabdullaevv.bridge.TestActivity;
 import com.jaloliddinabdullaevv.bridge.databinding.FragmentHomeBinding;
 
 public class HomeFragment extends Fragment {
@@ -62,7 +63,8 @@ public class HomeFragment extends Fragment {
 
         });
         questionCard.setOnClickListener(v -> {
-
+            Intent intent=new Intent(v.getContext(), TestActivity.class);
+            v.getContext().startActivity(intent);
         });
         getMoneyCard.setOnClickListener(v -> {
 
